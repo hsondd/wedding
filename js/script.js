@@ -4,14 +4,9 @@
 })(jQuery);
 
 
-window.addEventListener('load', function() {
-    var audioElement = document.getElementById("my_audio");
-    if (audioElement) {
-        audioElement.muted = false; // Unmute the audio
-        audioElement.play().catch(function(error) {
-            console.log('Autoplay failed. User interaction is required to play the audio.');
-        });
-    }
+$(document).on('click', function(){
+    document.getElementById("my_audio").play();
+    console.log('loz loz loz');
 });
 
 // Set the date we're counting down to
