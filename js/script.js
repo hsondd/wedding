@@ -7,6 +7,7 @@
 window.addEventListener('load', function() {
     var audioElement = document.getElementById("my_audio");
     if (audioElement) {
+        audioElement.muted = false; // Unmute the audio
         audioElement.play().catch(function(error) {
             console.log('Autoplay failed. User interaction is required to play the audio.');
         });
@@ -75,7 +76,7 @@ var styles2 = [
 
 console.log('\n\n%c SAVE THE DATE: 9th Oct, 2025!', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards: Son Doan', styles1, styles2);
 
 console.log(
     `%cak cak cak!\n\n`,
