@@ -1,15 +1,14 @@
-(function ($) {
-    "use strict";
-    // Bắt đầu hiệu ứng tuyết rơi
-    $(document).ready(function() {
-        $(document).snowfall({
-            flakeCount: 100, // Số lượng bông tuyết
-            maxSpeed: 5,     // Tốc độ rơi tối đa
-            maxSize: 10      // Kích thước bông tuyết tối đa
-        });
+// (function ($) {
+//     "use strict";
+//       $('.sakura-falling').sakura();
+// })(jQuery);
+$(document).ready(function() {
+    $(document).snowfall({
+        flakeCount: 100, // Số lượng bông tuyết
+        maxSpeed: 5,     // Tốc độ rơi tối đa
+        maxSize: 10      // Kích thước bông tuyết tối đa
     });
-})(jQuery);
-
+});
 
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
