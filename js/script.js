@@ -1,6 +1,20 @@
+// (function ($) {
+//     "use strict";
+//       $('.sakura-falling').sakura();
+// })(jQuery);
+
 (function ($) {
     "use strict";
-      $('.sakura-falling').sakura();
+
+    // Khởi tạo hiệu ứng sakura với class tùy chỉnh
+    $('.sakura-falling').sakura({
+        className: 'purple-rose', // Class tùy chỉnh cho hoa hồng tím
+        blowAnimations: ['blow-soft-left', 'blow-medium-right'], // Hướng gió
+        fallSpeed: 2, // Tốc độ rơi
+        maxSize: 20, // Kích thước lớn nhất của hoa
+        minSize: 10, // Kích thước nhỏ nhất của hoa
+        newOn: 300 // Tạo hoa mới mỗi 300ms
+    });
 })(jQuery);
 
 $(document).on('click', function(){

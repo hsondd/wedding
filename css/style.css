@@ -343,6 +343,16 @@
 	box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* Add a glow effect */
 }
 
+.purple-rose {
+    background: radial-gradient(circle, #800080, #dda0dd); /* Gradient tím */
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%; /* Làm tròn cánh hoa */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5); /* Hiệu ứng ánh sáng tím */
+    width: 15px; /* Kích thước mặc định */
+    height: 15px; /* Kích thước mặc định */
+}
+
 
 /*******************************/
 
