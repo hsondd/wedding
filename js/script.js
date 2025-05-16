@@ -1,6 +1,13 @@
 (function ($) {
     "use strict";
-      $('.sakura-falling').sakura();
+    // Bắt đầu hiệu ứng tuyết rơi
+    $(document).ready(function() {
+        $(document).snowfall({
+            flakeCount: 100, // Số lượng bông tuyết
+            maxSpeed: 5,     // Tốc độ rơi tối đa
+            maxSize: 10      // Kích thước bông tuyết tối đa
+        });
+    });
 })(jQuery);
 
 
