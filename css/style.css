@@ -336,11 +336,15 @@
 }
 
 .sakura {
-	background: linear-gradient(120deg, #ff69b4, #ffc0cb); /* Pink gradient */
+	/* background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));*/
+	background: red;
 	pointer-events: none;
-	position: absolute;
-	border-radius: 50%; /* Optional: Make them circular */
-	box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* Add a glow effect */
+	position: absolute
+}
+
+.sakura {
+	background: #674ea7;
 }
 
 
