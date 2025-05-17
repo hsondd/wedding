@@ -8,8 +8,8 @@ html
   scroll-behavior: smooth;
 }
 body {
+  font-family: 'Be Vietnam Pro', Arial, sans-serif;
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
 }
 
