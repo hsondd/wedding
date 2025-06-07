@@ -11,7 +11,9 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <!-- simplyCountdown -->
    <!-- <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -23,6 +25,10 @@
 </head>
 
 <body>
+   <div id="preloader"
+      style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:white;display:flex;align-items:center;justify-content:center;">
+      <div style="font-family:'Dancing Script',cursive;font-size:2rem;color:#f14e95;">Loading...</div>
+   </div>
 
    <section id="hero"
       class="hero w-100 min-vh-100 p-0 m-0 mx-auto text-center d-flex justify-content-center align-items-center text-white">
@@ -32,9 +38,9 @@
             <h1 class="tracking-in-expand-fwd-top"><b>Hong Son & Mai Linh</b></h1>
          </div class="judul">
          <p data-aos="slide-up" data-aos-once="false" data-aos-duration="3000">
-  There will be a wedding reception on
-  <span id="countdown-inline" style="font-weight:bold; color:#f14e95;"></span>
-</p>
+            There will be a wedding reception on
+            <span id="countdown-inline" style="font-weight:bold; color:#f14e95;"></span>
+         </p>
          <a href="#home" class="btn btn-lg mt-4" data-aos="slide-down" data-aos-once="false" data-aos-duration="3000"
             onClick="enableScroll()">See Invitation</a>
       </main>
@@ -568,29 +574,34 @@
       });
 
    </script>
-      <script>
-     function updateCountdownInline() {
-       const eventDate = new Date('2025-06-28T11:00:00').getTime();
-       const now = new Date().getTime();
-       let gap = eventDate - now;
-   
-       if (gap < 0) gap = 0;
-   
-       const second = 1000;
-       const minute = 60 * second;
-       const hour = 60 * minute;
-       const day = 24 * hour;
-   
-       const d = Math.floor(gap / day);
-       const h = Math.floor((gap % day) / hour);
-       const m = Math.floor((gap % hour) / minute);
-       const s = Math.floor((gap % minute) / second);
-   
-       document.getElementById('countdown-inline').textContent =
-         `${d}d ${h}h ${m}m ${s}s`;
-     }
-     updateCountdownInline();
-     setInterval(updateCountdownInline, 1000);
+   <script>
+      function updateCountdownInline() {
+         const eventDate = new Date('2025-06-28T11:00:00').getTime();
+         const now = new Date().getTime();
+         let gap = eventDate - now;
+
+         if (gap < 0) gap = 0;
+
+         const second = 1000;
+         const minute = 60 * second;
+         const hour = 60 * minute;
+         const day = 24 * hour;
+
+         const d = Math.floor(gap / day);
+         const h = Math.floor((gap % day) / hour);
+         const m = Math.floor((gap % hour) / minute);
+         const s = Math.floor((gap % minute) / second);
+
+         document.getElementById('countdown-inline').textContent =
+            `${d}d ${h}h ${m}m ${s}s`;
+      }
+      updateCountdownInline();
+      setInterval(updateCountdownInline, 1000);
+   </script>
+   <script>
+      window.addEventListener('load', function () {
+         document.getElementById('preloader').style.display = 'none';
+      });
    </script>
 </body>
 
