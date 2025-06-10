@@ -516,7 +516,7 @@ body {
 }
 
 .story {
-  background-image: url(img/bg-story.jpg);
+  background-image: url(img/bg-story.webp);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -732,7 +732,7 @@ body {
 
 /* Original RSVP styles */
 .rsvp {
-  background-image: url('img/bg-attenden.jpg');
+  background-image: url('img/bg-attenden.webp');
   background-size: cover;
   min-height: 100vh;
   display: flex;
