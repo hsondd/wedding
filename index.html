@@ -19,8 +19,6 @@
    <link rel="stylesheet" href="style.css">
    <meta property="og:title" content="Sơn & Linh Wedding Invitation | 28/06/2025" />
    <meta property="og:description" content="You're invited to our wedding! Join us for a special day." />
-   <!-- <meta property="og:image"
-      content="https://raw.githubusercontent.com/hsondd/wedding-invitation-card/9064466f226ed3f399f5f96e5d30340d4d7a7975/assets/img/sondeptrai.jpg" /> -->
    <meta property="og:type" content="website" />
    <meta property="og:url" content="https://sonlinhwedding.site" />
 </head>
@@ -36,7 +34,6 @@
    <section id="hero"
       class="hero w-100 min-vh-100 p-0 m-0 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-         <!-- <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4> -->
          <div>
             <h1 class="tracking-in-expand-fwd-top"><b>Hong Son & Mai Linh</b></h1>
          </div class="judul">
@@ -100,7 +97,6 @@
                <div class="row">
                   <div class="col-8 text-end">
                      <h3 data-aos="fade-up-right" data-aos-once="false" data-aos-duration="1700">Doan Hong Son</h3>
-                     <!-- <p data-aos="fade-up-right" data-aos-once="false" data-aos-duration="1800">Daughter of Mr Yusuf<br> And <br> Mrs Dewi</p> -->
                   </div>
                   <div class="col-4" data-aos="fade-right" data-aos-once="false" data-aos-duration="2200">
                      <img src="img/son.webp" alt="Đoàn Hồng Sơn" class="img-responsive ">
@@ -116,7 +112,6 @@
                   </div>
                   <div class="col-8 text-start">
                      <h3 data-aos="fade-up-left" data-aos-once="false" data-aos-duration="1700">Le Tran Mai Linh</h3>
-                     <!-- <p data-aos="fade-up-left" data-aos-once="false" data-aos-duration="1800">Daughter of Mr Asep <br> And <br> Mrs Ida </p> -->
                   </div>
                </div>
             </div>
@@ -418,22 +413,6 @@
       crossorigin="anonymous"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-
-   <!-- <script>
-      simplyCountdown('.simply-countdown', {
-         year: 2025, // required
-         month: 6, // required
-         day: 28, // required
-         hours: 11, // Default is 0 [0-23] integer
-         words: { //words displayed into the countdown
-            days: { singular: 'hari', plural: 'hari' },
-            hours: { singular: 'jam', plural: 'jam' },
-            minutes: { singular: 'menit', plural: 'menit' },
-            seconds: { singular: 'detik', plural: 'detik' }
-         },
-      });
-   </script> -->
-
    <script>
       const stickyTop = document.querySelector('.sticky-top');
       const offcanvas = document.querySelector('.offcanvas');
@@ -469,7 +448,6 @@
       function enableScroll() {
          window.onscroll = function () { }
          rootElement.style.scrollBehavior = 'smooth';
-         // localStorage.setItem('opened', 'true');
          playAudio();
       }
 
@@ -493,10 +471,7 @@
 
          isPlaying = !isPlaying;
       }
-
-      // if (!localStorage.getItem('opened')) {
-      //   disableScroll();
-      // }
+      
       disableScroll();
    </script>
    <script>
@@ -511,7 +486,7 @@
                body: data,
             })
                .then(() => {
-                  alert("Konfirmasi kehadiran berhasil terkirim!");
+                  alert("Your attendance confirmation has been sent successfully!");
                })
          });
       });
